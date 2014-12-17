@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/sombrero
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://vulpine.me
+  * I am sombrero (https://keybase.io/sombrero) on keybase.
+  * I have a public key with fingerprint C695 BACC 000C 281C 048F  A14E BCE8 7251 62F1 77D0
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "c695bacc000c281c048fa14ebce8725162f177d0",
+            "host": "keybase.io",
+            "key_id": "bce8725162f177d0",
+            "uid": "47a46b8ddbedc0e2fe6c62ddae452600",
+            "username": "sombrero"
+        },
+        "service": {
+            "hostname": "vulpine.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418784487,
+    "expire_in": 157680000,
+    "prev": "e2a3b5305e5ceba6b54155bec73c706fba40f577edec7437da4b7485587bbf2b",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.6
+Comment: https://keybase.io/crypto
+
+yMHiAnicbZFdSBRRFMfXj8Q0QypLI3D3IiGxLjOz8+VIYkI+mGHBRpDJMvfOHZ3U
+mW12dlPMPiAo7KVsW0LCfKg2X3KxFSoxpAzLoDCwICzF0ChLEdEIH+yO2FtPl/M/
+v/M/59wznJXiyEgq7c38wuws+pH0Zmgh5PBdm//WCqChtACpFTTg9UfV9DpsBkxN
+t4AEEF/MQRkhiqIQI9KIYkVVplkMERYFhqN5RqUFQaGAG9QbQbuC2EA5iD2aQTQS
++DWFqP/hQ+sJVpBZHoqKArGCKMyomEc8oygyZjmGp9bBIDZ1uQkTOmg0QRObBmhz
+A6KGNYTtme3WG0Q41BjQdOwhgRsETMMykNFI9HrLCkh2mdUSsLkzGPo3HPxQ0xWy
+NSkIYzOoGTqQaEIiS7MtaZYWBZFlRcENcHNAM7FfswlO4EXyLZTdBoeJJWZkL+S8
+FIc5hKHMQ46lOQ5iJHiRQPEqlFlK5QQBK0RivYIis1BgRY4TBQhVBgJ7p9O6ASSe
+jCnX2ftqdbpshUwM2p4PnUx1JGU40jYl23dzZGzO/nfNxpfpjmHX8NqB3GeLx+O1
+c2/b+rZ0R5j9ztxEZDX2oKLnTqQ6xbokfyw8dwjMXomudfwuWjxWMz05Xj1xJJp3
+PjE+1eHreDR4/0Z3qPLCytOcvpziypuo4tXop+h0tjThK57Z/vrqYZ/7falH+aBm
+NktVJwpDc66Qufw4b+/ZyFRv84uBiSXKuau2YKG9avetg6emB/K7lm4XrAVrPneN
+NpT3HC0RZ9Lg7B9nVqzzXk26tOdr/2g8jiZLUhczV3xh14gMXb/YGNhR/t3VVSl1
+OmP7Vssa6gNy3PcwkZ4G75ZeHFnuvZyzdaEz6hl8N78Nj42VtSdnBfv5J/k/Dev6
+XygpFOg=
+=as/P
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sombrero
+
+==================================================================
