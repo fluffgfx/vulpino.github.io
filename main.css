@@ -24,16 +24,56 @@ p, h1, h2, h3 {
   background-color: #3cf;
 }
 
+#twitter-button:hover {
+  background-color: #0084b4;
+}
+
 #github-button {
   background-color: #111;
+}
+
+#github-button:hover {
+  background-color: #eee;
 }
 
 #keybase-button {
   background-color: #FF8648;
 }
 
+#keybase-button:hover {
+  background-color: #D1642C;
+}
+
 #whatcolorisit-link {
   background-color: #aa4444;
+}
+
+#whatcolorisit-link:hover {
+  background-color: #992222;
+}
+
+#haunt-link {
+  background-color: #f5e727;
+}
+
+#haunt-link:hover {
+  background-color: #B8AD1F;
+}
+
+#professor-link {
+  background-color: #b5e655;
+}
+
+#professor-link:hover {
+  background-color: #96ca2d;
+}
+
+#chunk-link {
+  background-color: #ccc;
+}
+
+#chunk-link:hover {
+  background-color: #888;
 }
 
 .centered {
