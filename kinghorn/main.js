@@ -1,6 +1,6 @@
 $(document).ready(function (){
   function setContentToPage(page) {
-    page = '/kinghorn/' + page + '.html';
+    page = page + '.html';
     $.get(page, function(data) {
       $('#c').html(data);
     });
