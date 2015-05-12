@@ -4,5 +4,5 @@
 
 .menu-item:hover {
   transition: scale(1.1);
-  color: blue;
+  color: white;
 }
