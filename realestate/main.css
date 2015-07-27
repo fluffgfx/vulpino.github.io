@@ -1,0 +1,112 @@
+body {
+	/* background */
+	background: url("house_01.jpeg");
+	background-position: center;
+	/* prevent scrolling */
+	height: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+/* header logo */
+.logo-header {
+	height: 100px;
+	text-align: center;
+}
+
+/* horizontally align home and sub menus */
+.home-menu-container-outer {
+	text-align: center;
+}
+
+.home-menu-container-inner {
+	display: inline-block;
+}
+
+.sub-menu-container-outer {
+	text-align: center;
+	height: 2.125em; /* removes small space for aesthetic */
+}
+
+.sub-menu-container-inner {
+	display: inline-block;
+	width: 100%;
+}
+
+/* magic horizontal and vertical alignment */
+.content-outer {
+	text-align: center;
+}
+
+.content-outer:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+
+.content {
+	display: inline-block;
+	vertical-align: middle;
+	width: 36em;
+	background: rgba(255,255,255,0.65);
+	overflow: auto;
+	max-height: 36em;
+	padding: 2em 2em;
+	margin-top: 2em;
+}
+
+/* changing background on hover for pure list */
+.pure-menu-list li a:hover,
+.pure-menu-list li a:focus {
+	background: rgba(255,255,255,0.65);
+	color: rgba(255,255,255,0.9);
+}
+
+/* hamburger show button */
+.menu-link {
+	-webkit-transition: all 0.2s ease-out;
+  	-moz-transition: all 0.2s ease-out;
+  	-ms-transition: all 0.2s ease-out;
+  	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	font-size: 32px;
+	z-index: 10;
+	width: 1em;
+	height: 1em;
+	padding: 0.25em;
+	color: white;
+	text-align: center;
+}
+
+/* hamburger properties */
+.hamburger {
+	-webkit-transition: all 0.2s ease-out;
+  	-moz-transition: all 0.2s ease-out;
+  	-ms-transition: all 0.2s ease-out;
+  	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	margin-top: -160px;
+	height: 160px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1000;
+	background: #191818;
+	overflow-y: auto;
+}
+
+/* remove scrollbar on webkit browsers for text box */
+::-webkit-scrollbar {
+	display: none;
+}
