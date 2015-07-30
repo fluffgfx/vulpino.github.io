@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-color: #49516f;
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   margin: 0; padding: 0;
@@ -29,19 +30,11 @@ p, h1, h2, h3 {
 }
 
 #github-button {
-  background-color: #111;
+  background-color: #444;
 }
 
 #github-button:hover {
   background-color: #eee;
-}
-
-#keybase-button {
-  background-color: #FF8648;
-}
-
-#keybase-button:hover {
-  background-color: #D1642C;
 }
 
 #whatcolorisit-link {
@@ -58,6 +51,22 @@ p, h1, h2, h3 {
 
 #sudobash-link:hover {
   background-color: #eee8d5;
+}
+
+#ello-button {
+  background-color: #000;
+}
+
+#ello-button:hover {
+  background-color: #777;
+}
+
+#about-link {
+  background-color: #7272ab;
+}
+
+#about-link:hover {
+  background-color: #8ea4d2;
 }
 
 .centered {
@@ -94,4 +103,15 @@ a:hover {
   top: 0; left: 0;
   height: 96%; /* 100% creates a scrolbar for whatever reason */
   width: 100%;
+}
+
+#about {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  top: 560px; left: 120px;
+  height: 68px;
+  width: 500px;
+  padding: 1em 1em;
+  background: rgba(255,255,255,0.6);
 }

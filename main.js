@@ -18,6 +18,15 @@ $(document).ready(function(){
         }
     });
     image.clipWith(text).attr({ onmouseover: '$("#drawing svg image").trigger("click");' });
+
+    if($(document).width() < 690){
+        $("#about").width($(document).width()-160);
+        $("#about").height(630);
+        $("#about").css("top", "0");
+    }
+    $("#about-link").on("click", function(){
+        $("#about").slideToggle();
+    });
 });
 // oh, but yeah i'm so tired
 // i fight so hard and come back beaten
