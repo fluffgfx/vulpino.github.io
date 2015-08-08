@@ -1,0 +1,56 @@
+div.vao {
+  height: 100%;
+  text-align: center;
+  /*margin: 20px;*/
+}
+
+div.vao:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+div.vai {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1000px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Chiaro Catch';
+  font-weight: normal;
+  font-style: normal;
+  src: url('Chiaro.woff') format('woff');
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Chiaro Catch';
+  font-style: normal;
+  color: white;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.content {
+  text-align: center;
+}
