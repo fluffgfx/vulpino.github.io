@@ -1,32 +1,7 @@
 $(document).ready(function(){
     var draw = SVG('drawing');
-    var backgrounds = ["img/bg1.jpg", "img/bg2.jpg", "img/bg3.jpeg", "img/bg4.jpeg", "img/bg5.jpg", "img/bg6.jpg"];
-    var image = draw.image(backgrounds[Math.floor(Math.random() * backgrounds.length)]);
-    image.size($(document).width()-16, $(document).height()-16)
-    var text = draw.path("M187,130L187 219 277.5 303.5 160 303.5 223 360 160 422 277.5 422 440 592.5 440 418 501 476.5 562 420.5 562 300.5 503.5 361.25 440.5 301 440 415.5 393 415.5 280 305 280 221.5 z").fill("none").size(300).center(($(document).width()/2), ($(document).height()/2));
-    var anim = false;
-    $("#drawing svg image").on("click", function(){
-        if(!anim){
-            anim = true
-            var moveX = Math.random()*500-250;
-            var moveY = Math.random()*500-250;
-            image.animate(300, '<>', 0).dmove(moveX,moveY).after(function() {
-                this.animate(300, '<>', 0).dmove(-moveX,-moveY).after(function(){
-                    anim=false;
-                });
-            });  
-        }
-    });
-    image.clipWith(text).attr({ onmouseover: '$("#drawing svg image").trigger("click");' });
-
-    if($(document).width() < 690){
-        $("#about").width($(document).width()-160);
-        $("#about").height(630);
-        $("#about").css("top", "0");
-    }
-    $("#about-link").on("click", function(){
-        $("#about").slideToggle();
-    });
+	var logo = draw.path("M374.5,385.7 l250,250 h-500 L374.5,385.7 z M374.5,635.7 l353.6,353.6 V635.7 H374.5 z M728.1,687.5 l125,125 l125-123.6 l-125-126.4 L728.1,687.5 z M978.1,688.9 V437.5 l-125,125 L978.1,688.9 z M728.1,436.1 v251.4 l125-125 L728.1,436.1 z M198.7,561.5 l175.8-175.8 l-352.6-1 L198.7,561.5 z M249.5,260.7 l125,125 v-250 l-125-125 V260.7 z").fill("white").size(300).center(($(document).width()/2), ($(document).height()/10)*3);
+	var image = draw.image("img/bg1.jpg").size($(document).width(), $(document).height()).center(($(document).width()/2), ($(document).height()/10)*3).clipWith(logo);
 });
-// oh, but yeah i'm so tired
+// i'm so tired
 // i fight so hard and come back beaten
