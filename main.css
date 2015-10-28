@@ -21,23 +21,20 @@ h1 {
   font-size: 4em;
 }
 
-#header {
-  height: 75%;
-  text-align: center;
+h4 {
+  margin-left: 3vw;
 }
 
 #drawing {
-  height: 80%;
+  height: 100%;
 }
 
 #menu {
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  height: 25%;
-  width: 100%;
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+  width: 15vw;
+  background-color: rgba(50, 50, 50, 0.3)
 }
 
 .menu-flex {
