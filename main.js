@@ -16,8 +16,8 @@ $(document).ready(function(){
   }
 
   $(window).resize(debouncer(function(e){
-    logo.x($(document).width()/2-logo.rbox().width);
-    logo.y($(document).height()/2-logo.rbox().height);
+    logo.animate(250, '>', 100).cx($(document).width()/2); // Not working in FF
+    logo.animate(250, '>', 100).cy($(document).height()/2); // No stroke-width attr - look into
     console.log(logo, logo.rbox());
     console.log($(document).width()/2-logo.node.getBoundingClientRect().width);
     console.log(logo.cx(), $(document).width()/2);
