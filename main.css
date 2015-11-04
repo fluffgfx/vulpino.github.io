@@ -30,7 +30,6 @@ p {
 #buffer {
   height: 125vh;
   width: 100vw;
-  background: #000;
 }
 
 @media all and (max-width: 640px) {

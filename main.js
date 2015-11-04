@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   $(window).resize(function(e){
     image.hide().unclip();
-    logo = draw.path(logostring).fill("white").size($(window).height()/(1.5)).center(($(document).width()/2), ($(document).height()/2)).stroke({color: '#fff', opacity: 0.1, width: 1});
+    logo = draw.path(logostring).fill("white").size($(window).height()/(1.5)).center(($(window).width()/2), ($(window).height()/2)).stroke({color: '#fff', opacity: 0.1, width: 1});
     image.clipWith(logo).show();
     image.animate(250, '>', 100).size($(window).width()/(1.25), $(window).height()/(1.25)).center(($(window).width()/2), ($(window).height()/2));
   });
