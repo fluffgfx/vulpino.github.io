@@ -1,12 +1,6 @@
-html {
-  height: 100%;
-}
-
 body {
-  position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   margin: 0; padding: 0;
-  overflow: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -17,82 +11,27 @@ p {
   margin: 0 0 0 0;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 4em;
-}
-
-h4 {
-  margin-left: 3vw;
+#header {
+  height: 150px;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0,0,0,0);
 }
 
 #drawing {
-  height: 100%;
-}
-
-#menu {
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  top: 2vh;
-  left: 2vw;
-  width: 15vw;
-  background-color: rgba(50, 50, 50, 0.3)
+  z-index: 998;
+  background-color: rgba(255,255,255,1);
 }
 
-.menu-flex {
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-transition: width 0.7s ease-out;
-  transition: width 0.7s ease-out;
-}
-
-.menu-button {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: white;
-}
-
-.menu-button > i, p {
-  display: inline-block;
-  color: white;
-  position: relative;
-  top: 50%;
-  width: 40%;
-  transform: translateY(-50%);
-}
-
-.spacer {
-  display: inline-block;
-  width: 75px;
-  height: 75px;
+#buffer {
+  height: 125vh;
+  width: 100vw;
+  background: #000;
 }
 
 @media all and (max-width: 640px) {
-
-  #header {
-	  height: 50%;
-  }
-  
-  #menu {
-	-webkit-flex-flow: column;
-	flex-direction: column;
-  }
-  
-  .menu-button {
-	width: 100%;
-	height: 600px;
-  }
-  
-  .menu-button > i, p {
-  }
-  
-  .spacer {
-	width: 100%;
-	height: 50px;
-  }
 }
