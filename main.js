@@ -27,7 +27,7 @@ $(document).ready(function(){
       logo = draw.path(logostring).fill("white").size($(window).height()/(1.5)).center(($(window).width()/2), ($(window).height()/2)).stroke({color: '#fff', opacity: 0.1, width: 1});
       image.clipWith(logo).show();
       image.size($(window).width()/(1.25), $(window).height()/(1.25)).center(($(window).width()/2), ($(window).height()/2));
-      $("#header").css("background-color", "rgba(0,0,0,0)")
+      $("#header").css("opacity", "0")
     }else if($(window).scrollTop() >= 5 && $(window).scrollTop() <= 105){
       var percent = -(($(window).scrollTop()-5)/100)+1;
       var size = ($(window).height()/(1.5))*percent;
@@ -55,7 +55,7 @@ $(document).ready(function(){
       image.clipWith(logo).show();
       image.size(imageSizeX, imageSizeY).center(centerX, centerY);
       $(window).off("mousemove");
-      $("#header").css("background-color", "rgba(0,0,0,"+(0.1*(-(percent-1))).toString()+")");
+      $("#header").css("opacity", (1*(-(percent-1))).toString());
       $("#drawing").css("background-color", "rgba(255,255,255,"+percent.toString()+")");
     }else{
       image.hide().unclip();
