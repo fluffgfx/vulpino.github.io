@@ -12,9 +12,21 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="header"></div>
+    <div id="header">
+      <div id="header-links">
+        <div class="header-link"><h3><a href="#about-me">About Me</a></h3></div>
+        <div class="header-link"><h3><a href="#portfolio">Portfolio</a></h3></div>
+        <div class="header-link"><h3><a href="http://blog.vulpine.me/">My Blog</a></h3></div>
+        <div class="header-link"><h3><a href="mailto:hispanic@hush.ai">Contact Me</a></h3></div>
+      </div>
+    </div>
     <div id="drawing"></div>
     <div id="buffer"></div>
+    <div id="left-menu">
+      <a href="https://github.com/vulpino"><div class="left-menu-item github"><i class="fa fa-github"></i></div></a>
+      <a href="https://twitter.com/vulpinoh"><div class="left-menu-item twitter"><i class="fa fa-twitter"></i></div></a>
+      <a href="https://dribbble.com/vulpino"><div class="left-menu-item dribbble"><i class="fa fa-dribbble"></i></div></a>
+    </div>
     <div id="about-me" class="section">
       <h1>About Me</h1>
       <div class="column-container">
@@ -32,22 +44,28 @@
         </div>
       </div>
     </div>
-    <div id="services" class="section">
-      <h1>Services</h1>
+    <div id="portfolio" class="section">
+      <h1>Portfolio</h1>
       <div class="column-container">
         <div class="column third">
           <i class="fa fa-code"></i>
-          <h1>Programming</h1>
+          <h2>Dit</h2>
+          <p>Dit is a dotfiles managment tool that hooks into git.</p>
+          <p>It's pretty nice. Dit got featured on <a href="https://twitter.com/onethingwell/status/662615512266985472">onethingwell.org</a>, and has (to my best estimates) about 500 users.</p>
+          <p>You can find it on the <a href="https://github.com/vulpino/dit">github page</a>.
         </div>
         <div class="column third-spacer"></div>
         <div class="column third">
-          <i class="fa fa-desktop"></i>
-          <h1>Graphic Design</h1>
+          <i class="fa fa-coffee"></i>
+          <h2>FrenchPress</h2>
+          <p>Frenchpress is a blogging engine, hosted through github pages and designed for hackers.</p>
+          <p>It's a work in progress, but you can find it at <a href="https://frenchpress.vulpine.me/">the official frenchpress blog</a> (which runs on frenchpress) or <a href="https://github.com/vulpino/frenchpress">on the github page</a>.
         </div>
         <div class="column third-spacer"></div>
         <div class="column third">
-          <i class="fa fa-laptop"></i>
-          <h1>Brand Design</h1>
+          <i class="fa fa-home"></i>
+          <h2>Professional Web Design</h2>
+          <p>I've created websites and branding identities for professional agencies such as Rose Phan International. If you're interested in hiring me, feel free to email me using the contact link at the top of the page.</p>
         </div>
       </div>
     </div>

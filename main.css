@@ -4,9 +4,32 @@ body {
   overflow-x: hidden;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 p {
   margin: 0 0 1em 0;
   font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #000;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #000;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #777;
+  font-weight: bold;
 }
 
 #header {
@@ -16,6 +39,18 @@ p {
   z-index: 999;
   background-color: rgba(224,224,224,1);
   opacity: 0;
+}
+
+#header-links {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
+}
+
+.header-link {
+  display: inline-block;
+  margin-right: 5vw;
 }
 
 #drawing {
@@ -111,6 +146,53 @@ p {
   font-size: 60px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#left-menu {
+  position: fixed;
+  top: 160px;
+  left: 0;
+  width: 10%;
+}
+
+.left-menu-item {
+  width: 100px;
+  left: -50px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: left 0.1s ease-in;
+  -o-transition: left 0.1s ease-in;
+  -ms-transition: left 0.1s ease-in;
+  -moz-transition: left 0.1s ease-in;
+  -webkit-transition: left 0.25s ease-in;
+}
+
+.left-menu-item i {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  float: right;
+  margin-right: 10px;
+}
+
+.github {
+  background-color: #000;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.dribbble {
+  background-color: #ea4c89;
+}
+
+.left-menu-item:hover {
+  left: -25px;
 }
 
 @keyframes rotatingicon-1 {
