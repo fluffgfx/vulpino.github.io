@@ -60,16 +60,31 @@ a:hover {
   z-index: 1000;
   background-color: rgba(255,255,255,1);
   pointer-events: none;
+  transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -webkit-transition: opacity 0.25s ease-in;
 }
 
 #buffer {
   height: 75vh;
   width: 100vw;
+  transition: height 0.25s ease-in;
+  -o-transition: height 0.25s ease-in;
+  -ms-transition: height 0.25s ease-in;
+  -moz-transition: height 0.25s ease-in;
+  -webkit-transition: height 0.25s ease-in;
 }
 
 .section {
   width: 50vw;
   margin-left: 25vw;
+  transition: margin-left 0.25s ease-in;
+  -o-transition: margin-left 0.25s ease-in;
+  -ms-transition: margin-left 0.25s ease-in;
+  -moz-transition: margin-left 0.25s ease-in;
+  -webkit-transition: margin-left 0.25s ease-in;
 }
 
 .column-container {
@@ -78,7 +93,7 @@ a:hover {
 }
 
 .column-container .column {
-  display: table-cell !important;
+  display: table-cell;
   box-sizing: border-box;
   vertical-align: middle;
 }
@@ -153,6 +168,12 @@ a:hover {
   top: 160px;
   left: 0;
   width: 10%;
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
+  -o-transition: opacity 0.1s ease-in;
+  -ms-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
+  -webkit-transition: opacity 0.1s ease-in;
 }
 
 .left-menu-item {
@@ -298,5 +319,36 @@ a:hover {
   }
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 768px) {
+  .section {
+    margin-left: 5vw;
+    width: 90vw;
+  }
+
+  .column-container {
+    display: block;
+  }
+
+  .column-container .column {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .column-container .third {
+    width: 100%;
+    border: none;
+    text-align: left;
+  }
+
+  #drawing {
+    opacity: 0;
+  }
+
+  #left-menu {
+    opacity: 0;
+  }
+
+  #buffer {
+    height: 10vh;
+  }
 }
