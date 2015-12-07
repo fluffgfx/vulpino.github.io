@@ -68,8 +68,12 @@ a:hover {
 }
 
 #buffer {
-  height: 75vh;
+  height: 70vh;
   width: 100vw;
+  background-image: url('img/background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  margin-bottom: 5vh;
   transition: height 0.25s ease-in;
   -o-transition: height 0.25s ease-in;
   -ms-transition: height 0.25s ease-in;
