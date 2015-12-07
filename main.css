@@ -352,3 +352,9 @@ a:hover {
     height: 10vh;
   }
 }
+
+@media all and (max-width: 640px) {
+  #header {
+    opacity: 0;
+  }
+}

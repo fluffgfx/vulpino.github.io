@@ -23,13 +23,13 @@ $(document).ready(function(){
         if(scrolled) {
           kyle.center(150, 20);
           kyle.font({
-            family: 'Brandon Grotesque',
+            family: 'brandon-grotesque',
             weight: 900,
             size: 48
           });
         }else{
           kyle.font({
-            family: 'Brandon Grotesque',
+            family: 'brandon-grotesque',
             weight: 900,
             size: ($(window).height()/3)
           });
