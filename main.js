@@ -22,7 +22,7 @@ $(document).ready(function(){
           image.size(350, 250);
           kyle.center(150, 20);
           kyle.font({
-            family: 'brandon-grotesque',
+            family: 'museo-sans',
             weight: 900,
             size: 48
           });
@@ -30,7 +30,7 @@ $(document).ready(function(){
           image.center(($(window).width()/3)+150, $(window).height()/2);
           image.size($(window).width(), $(window).height());
           kyle.font({
-            family: 'brandon-grotesque',
+            family: 'museo-sans',
             weight: 900,
             size: ($(window).height()/3)
           });
