@@ -29,10 +29,15 @@ $(document).ready(function(){
         }else{
           image.center(($(window).width()/3)+150, $(window).height()/2);
           image.size($(window).width(), $(window).height());
+          var fontSize = ($(window).height()/3);
+          if($(window).width()/$(window).height() < 1.75){
+            fontSize = ($(window).height()/4);
+            kyle.center(150, 75);
+          }
           kyle.font({
             family: 'museo-sans',
             weight: 900,
-            size: ($(window).height()/3)
+            size: fontSize
           });
         }
         image.clipWith(kyle).show().animate(150, '>').opacity(1).after(function(){
