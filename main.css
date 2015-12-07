@@ -60,11 +60,11 @@ a:hover {
   z-index: 1000;
   background-color: rgba(255,255,255,1);
   pointer-events: none;
-  transition: opacity 0.25s ease-in;
-  -o-transition: opacity 0.25s ease-in;
-  -ms-transition: opacity 0.25s ease-in;
-  -moz-transition: opacity 0.25s ease-in;
-  -webkit-transition: opacity 0.25s ease-in;
+  transition: background-color 0.1s ease-in;
+  -o-transition: background-color 0.1s ease-in;
+  -ms-transition: background-color 0.1s ease-in;
+  -moz-transition: background-color 0.1s ease-in;
+  -webkit-transition: background-color 0.1s ease-in;
 }
 
 #buffer {
@@ -319,7 +319,7 @@ a:hover {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .section {
     margin-left: 5vw;
     width: 90vw;
