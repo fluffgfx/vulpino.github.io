@@ -142,44 +142,6 @@ a:hover {
   width: 1%;
 }
 
-.rotating-icon-container {
-  overflow: hidden;
-  position: relative;
-}
-
-.r-i-1 {
-  animation-duration: 4s;
-  animation-name: rotatingicon-1;
-  animation-iteration-count: infinite;
-}
-
-.r-i-2 {
-  animation-duration: 4s;
-  animation-name: rotatingicon-2;
-  animation-iteration-count: infinite;
-}
-
-.r-i-3 {
-  animation-duration: 4s;
-  animation-name: rotatingicon-3;
-  animation-iteration-count: infinite;
-}
-
-.r-i-4 {
-  animation-duration: 4s;
-  animation-name: rotatingicon-4;
-  animation-iteration-count: infinite;
-}
-
-.rotating-icon-container i {
-  margin-left: 100%;
-  position: absolute;
-  line-height: 60px;
-  font-size: 60px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 #left-menu {
   position: fixed;
   top: 160px;
@@ -212,8 +174,9 @@ a:hover {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 40px;
+  font-size: 36px;
   float: right;
+  margin-right: 2px;
 }
 
 .github {
