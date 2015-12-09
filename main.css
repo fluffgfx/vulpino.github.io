@@ -61,11 +61,11 @@ a:hover {
   z-index: 1000;
   background-color: rgba(255,255,255,1);
   pointer-events: none;
-  transition: background-color 0.1s ease-in;
-  -o-transition: background-color 0.1s ease-in;
-  -ms-transition: background-color 0.1s ease-in;
-  -moz-transition: background-color 0.1s ease-in;
-  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  -ms-transition: background-color 0.5s ease-in;
+  -moz-transition: background-color 0.5s ease-in;
+  -webkit-transition: background-color 0.5s ease-in;
 }
 
 .buffer {
@@ -214,7 +214,6 @@ a:hover {
   transform: translateY(-50%);
   font-size: 40px;
   float: right;
-  margin-right: 10px;
 }
 
 .github {
@@ -231,109 +230,6 @@ a:hover {
 
 .left-menu-item:hover {
   left: -25px;
-}
-
-@keyframes rotatingicon-1 {
-  0% {
-    margin-left: 40%;
-    opacity: 1;
-  }
-
-  25% {
-    margin-right: 200%;
-    opacity: 0;
-  }
-
-  50% {
-    margin-right: 0;
-    margin-left: 200%;
-  }
-
-  75% {
-    margin-left: 201%;
-  }
-
-  100% {
-    margin-left: 40%;
-    opacity: 1;
-  }
-}
-
-@keyframes rotatingicon-2 {
-  0% {
-    margin-left: 201%;
-  }
-
-  25% {
-    margin-left: 40%;
-    opacity: 1;
-  }
-
-  50% {
-    margin-right: 200%;
-    opacity: 0;
-  }
-
-  75% {
-    margin-right: 0;
-    margin-left: 200%;
-  }
-
-  100% {
-    margin-left: 201%;
-  }
-}
-
-@keyframes rotatingicon-3 {
-  0% {
-    margin-right: 0;
-    margin-left: 200%;
-  }
-
-  25%{
-    margin-left: 201%;
-  }
-
-  50% {
-    margin-left: 40%;
-    opacity: 1;
-  }
-
-  75% {
-    margin-right: 200%;
-    opacity: 0;
-  }
-  
-  100% {
-    margin-right: 0;
-    margin-left: 200%;
-  }
-}
-
-@keyframes rotatingicon-4 {
-  0% {
-    margin-right: 200%;
-    opacity: 0;
-  }
-
-  25% {
-    margin-right: 0;
-    margin-left: 200%;
-  }
-
-  50% {
-    margin-left: 201%;
-  }
-
-  75% {
-    margin-left: 40%;
-    opacity: 1;
-  }
-
-  100% {
-    margin-right: 200%;
-    opacity: 0;
-  }
 }
 
 @media all and (max-width: 1024px) {
@@ -374,10 +270,6 @@ a:hover {
     background-size: auto 100vh;
     background-position: center;
   }
-
-  .b2 {
-    margin-bottom: 0;
-  }
 }
 
 #footer {
@@ -386,8 +278,28 @@ a:hover {
   padding-left: 20vw;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: -5vh;
 }
 
 #footer p {
   font-size: 12px;
+}
+
+#chev-down {
+  position: fixed;
+  z-index: 1001;
+  top: 90vh;
+  width: 100vw;
+  text-align: center;
+  transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  -ms-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -webkit-transition: opacity 0.5s ease-in;
+}
+
+#chev-down i {
+  font-size: 50px;
+  opacity: 1;
+  color: #888;
 }

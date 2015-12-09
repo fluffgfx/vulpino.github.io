@@ -20,25 +20,24 @@ $(document).ready(function(){
         kyle.center(150, 0);
         if(scrolled) {
           image.size(350, 250);
-          kyle.center(150, 20);
+          kyle.center(150, 62.5);
           kyle.font({
             family: 'museo-sans',
             weight: 900,
-            size: 48
+            size: 48,
+            leading: "0.75em"
           });
         }else{
           image.center(($(window).width()/3)+150, $(window).height()/2);
           image.size($(window).width(), $(window).height());
-          var fontSize = ($(window).height()/3);
-          if($(window).width()/$(window).height() < 1.75){
-            fontSize = ($(window).height()/4);
-            kyle.center(150, 75);
-          }
           kyle.font({
             family: 'museo-sans',
             weight: 900,
-            size: fontSize
+            size: 96,
+            leading: "0.75em"
           });
+          var halflength = kyle.height()/2;
+          kyle.center($(window).width()/2, $(window).height()/2 - halflength);
         }
         image.clipWith(kyle).show().animate(150, '>').opacity(1).after(function(){
           toggling = false;
@@ -68,7 +67,7 @@ $(document).ready(function(){
     }
   }
 
-  $(window).hover(toggleLogo);
+  $(window).click(toggleLogo);
 
   $(window).resize(function(e){
     image.hide().unclip();
@@ -117,6 +116,7 @@ $(document).ready(function(){
       image.size(175, 175).center(175,75);
       $("#header").css("opacity", "1");
       $("#drawing").css("background-color", "rgba(255,255,255,0)");
+      $("#chev-down").css("opacity", "0");
       $(window).off();
       $("#header").click(toggleLogo);
       scrolled = true;
