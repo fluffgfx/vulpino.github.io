@@ -34,11 +34,12 @@ a:hover {
 }
 
 #header {
-  height: 150px;
-  width: 100vw;
+  height: 50px;
+  width: 55vw;
+  left: 45vw;
   position: fixed;
   z-index: 999;
-  background-color: rgba(224,224,224,1);
+  background-color: rgba(256,256,256,1);
   opacity: 0;
 }
 
@@ -265,4 +266,18 @@ a:hover {
   font-size: 50px;
   opacity: 1;
   color: #888;
+}
+
+#logo-bg {
+  position: fixed;
+  left: 100px;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  background-color: #fff;
+  transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
 }

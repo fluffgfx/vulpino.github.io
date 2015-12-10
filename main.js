@@ -27,6 +27,7 @@ $(document).ready(function(){
             size: 48,
             leading: "0.75em"
           });
+          $("#logo-bg").css("width", "240px");
         }else{
           image.center(($(window).width()/3)+150, $(window).height()/2);
           image.size($(window).width(), $(window).height());
@@ -55,6 +56,7 @@ $(document).ready(function(){
           image.size(175,175);
           image.center(175,75);
           logo.size(100).center(175,75);
+          $("#logo-bg").css("width", "150px");
         }else{
           logo.size($(window).height()/(1.5));
           logo.center($(window).width()/2, $(window).height()/2);
@@ -117,8 +119,9 @@ $(document).ready(function(){
       $("#header").css("opacity", "1");
       $("#drawing").css("background-color", "rgba(255,255,255,0)");
       $("#chev-down").css("opacity", "0");
+      $("#logo-bg").css("opacity", "1");
       $(window).off();
-      $("#header").click(toggleLogo);
+      $("#logo-bg").click(toggleLogo);
       scrolled = true;
     }
   });
