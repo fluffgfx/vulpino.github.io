@@ -27,7 +27,7 @@ $(document).ready(function(){
             size: 48,
             leading: "0.75em"
           });
-          $("#logo-bg").css("width", "240px");
+          $("#logo-bg").css("width", "255px");
         }else{
           image.center(($(window).width()/3)+150, $(window).height()/2);
           image.size($(window).width(), $(window).height());
