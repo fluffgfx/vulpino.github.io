@@ -41,6 +41,7 @@ a:hover {
 #header {
   height: 50px;
   width: 15vw;
+  min-width: 200px;
   left: 70vw;
   z-index: -5;
   position: fixed;
@@ -208,18 +209,17 @@ a:hover {
   left: -75px;
 }
 
-@media all and (max-width: 64rem) {
-  #header {
-    display: none;
+@media screen and (max-aspect-ratio: 3/4) {
+  #footer {
+    top: 290vh;
   }
+}
 
-  #logo-bg {
-    display: none;
-  }
-
-  .section {
-    margin-left: 5vw;
-    width: 90vw;
+@media screen and (max-aspect-ratio: 1/1) {
+  #header { display: none; }
+  #container-content {
+    width: 90%;
+    left: 5%;
   }
 
   .column-container {
@@ -237,10 +237,6 @@ a:hover {
     text-align: left;
   }
 
-  #drawing {
-    opacity: 0;
-  }
-
   #left-menu {
     opacity: 0;
   }
@@ -250,17 +246,42 @@ a:hover {
     background-size: auto 100vh;
     background-position: center;
   }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p, blockquote {
+    font-size: 20px;
+  }
+
+  #container-background {
+    height: 175vh;
+  }
+
+  #footer {
+    top: 215vh !important;
+  }
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+  #container-content {
+    width: 80%;
+    left: 10%;
+  }
 }
 
 #footer {
+  background-color: #ccc;
+  position: absolute;
+  margin-top: 15vh;
+  /*bottom: 0px;*/
+  padding-left: 20vw;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
   width: 100%;
   height: 150px;
-  background-color: #ccc;
-  padding-left: 20vw;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  position: absolute;
-  top: 175vh;
+  top: 150vh;
 }
 
 #footer p {
