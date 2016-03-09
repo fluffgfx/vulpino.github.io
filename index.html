@@ -4,9 +4,9 @@
     <title>vulpine - Kyle Fahringer</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway:700,200' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.2.5/svg.min.js"></script>
     <script src="https://use.typekit.net/kzh7sac.js"></script>
@@ -16,68 +16,70 @@
   <body>
     <div id="header">
       <div id="header-links">
-        <div class="header-link"><h3><a href="#about-me">About Me</a></h3></div>
-        <div class="header-link"><h3><a href="#portfolio">Portfolio</a></h3></div>
-        <div class="header-link"><h3><a href="http://blog.vulpine.me/">My Blog</a></h3></div>
         <div class="header-link"><h3><a href="mailto:kyle@vulpine.me">Contact Me</a></h3></div>
       </div>
     </div>
     <div id="drawing"></div>
     <div id="logo-bg"></div>
-    <div id="chev-down">
-      <i class="fa fa-chevron-down"></i>
-    </div>
-    <div class="buffer b1"></div>
     <div id="left-menu">
       <a href="https://github.com/vulpino"><div class="left-menu-item github"><i class="fa fa-github fa-fw"></i></div></a>
       <a href="https://twitter.com/vulpinoh"><div class="left-menu-item twitter"><i class="fa fa-twitter fa-fw"></i></div></a>
       <a href="https://dribbble.com/vulpino"><div class="left-menu-item dribbble"><i class="fa fa-dribbble fa-fw"></i></div></a>
     </div>
-    <div id="about-me" class="section">
-      <h1>About Me</h1>
-      <div class="column-container">
-        <div class="column content">
-          <p>I'm vulpine.</p>
-          <p>I am currently a student at Broward College and McFatter Technical College, learning Digital Media and Multimedia Design and working towards an Associate of the Arts.</p>
-          <p>Prior to my instruction in McFatter, I am entirely self taught. I have extensive knowledge of Ruby and Javascript, and have programmed many projects using both, such as <a href="http://vulpine.me/dit">dit</a>.</p>
-          <p>I also have cursory knowledge in Java, Python, CoffeeScript, and Elixr, and have training in the Adobe suite of products (including Photoshop, Illustrator, and InDesign.)</p>
+    <div id="container" class="parallax">
+      <div class="parallax-group">
+        <div id="container-content" class="parallax-fore">
+          <div id="about-me" class="section">
+            <h1>About Me</h1>
+            <div class="column-container">
+              <div class="column content">
+                <p>I'm vulpine.</p>
+                <p>I am currently a student at Broward College and McFatter Technical College, learning Digital Media and Multimedia Design and working towards an Associate of the Arts.</p>
+                <p>Prior to my instruction in McFatter, I am entirely self taught. I have extensive knowledge of Ruby and Javascript, and have programmed many projects using both, such as <a href="http://vulpine.me/dit">dit</a>.</p>
+                <p>I also have cursory knowledge in Java, Python, CoffeeScript, and Elixr, and have training in the Adobe suite of products (including Photoshop, Illustrator, and InDesign.)</p>
+              </div>
+              <div class="column side"></div>
+            </div>
+          </div>
+          <div id="portfolio" class="section">
+            <h1>Portfolio</h1>
+            <div class="column-container">
+              <div class="column third">
+                <i class="fa fa-code"></i>
+                <h2>Dit</h2>
+                <p>Dit is a dotfiles managment tool that hooks into git. It is very simple (about 200 lines of ruby) and designed to be as close to the unix philosophy of "do <a href="http://www.catb.org/esr/writings/taoup/html/ch01s06.html">one thing well</a>."</p>
+                <p>You can find it on the <a href="https://github.com/vulpino/dit">github page</a>, or install it using <code>gem install dit</code>.
+              </div>
+              <div class="column third-spacer"></div>
+              <div class="column third">
+                <i class="fa fa-bolt"></i>
+                <h2>Jolteon</h2>
+                <p>Jolteon is a quick and easy way to create Electron projects without worrying about boilerplate.</p>
+                <blockquote class="futura">"I'm not a user of any of those stacks, but I love the name!"<br /><span class="quote-source">-will_pseudonym</span></blockquote>
+                <p>It's quick, easy, and open source at <a href="https://github.com/vulpino/jolteon/">github.</a>
+              </div>
+              <div class="column third-spacer"></div>
+              <div class="column third">
+                <i class="fa fa-home"></i>
+                <h2>Professional Web Design</h2>
+                <p>I've created websites and branding identities for professional agencies such as Rose Phan International. If you're interested in hiring me, feel free to email me using the contact link at the top of the page.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="column side"></div>
+        <div id="container-background" class="parallax-back"><img src="img/background.jpg" /></div>
+
       </div>
-    </div>
-    <div class="buffer b3"></div>
-    <div id="portfolio" class="section">
-      <h1>Portfolio</h1>
-      <div class="column-container">
-        <div class="column third">
-          <i class="fa fa-code"></i>
-          <h2>Dit</h2>
-          <p>Dit is a dotfiles managment tool that hooks into git. It is very simple (about 200 lines of ruby) and designed to be as close to the unix philosophy of "do <a href="http://www.catb.org/esr/writings/taoup/html/ch01s06.html">one thing well</a>."</p>
-          <p>You can find it on the <a href="https://github.com/vulpino/dit">github page</a>, or install it using <code>gem install dit</code>.
-        </div>
-        <div class="column third-spacer"></div>
-        <div class="column third">
-          <i class="fa fa-bolt"></i>
-          <h2>Jolteon</h2>
-          <p>Jolteon is a quick and easy way to create Electron projects without worrying about boilerplate.</p>
-          <blockquote class="futura">"I'm not a user of any of those stacks, but I love the name!"<br /><span class="quote-source">-will_pseudonym</span></blockquote>
-          <p>It's quick, easy, and open source at <a href="https://github.com/vulpino/jolteon/">github.</a>
-        </div>
-        <div class="column third-spacer"></div>
-        <div class="column third">
-          <i class="fa fa-home"></i>
-          <h2>Professional Web Design</h2>
-          <p>I've created websites and branding identities for professional agencies such as Rose Phan International. If you're interested in hiring me, feel free to email me using the contact link at the top of the page.</p>
+      <div class="parallax-group">
+        <div id="footer" class="parallax-fore">
+          <p><a href="http://blog.vulpine.me/">My Blog</a></p>
+          <p><a href="https://twitter.com/vulpinoh">My Twitter</a></p>
+          <p><a href="https://github.com/vulpino">My Github</a></p>
+          <p><a href="https://dribbble.com/vulpino">My Dribbble</a></p>
+          <p><a href="mailto:kyle@vulpine.me">Email me</a></p>
+          <p>Background courtesy of Unsplash.</p>
         </div>
       </div>
-    </div>
-    <div class="buffer b2"></div>
-    <div id="footer">
-      <p><a href="http://blog.vulpine.me/">My Blog</a></p>
-      <p><a href="https://twitter.com/vulpinoh">My Twitter</a></p>
-      <p><a href="https://github.com/vulpino">My Github</a></p>
-      <p><a href="https://dribbble.com/vulpino">My Dribbble</a></p>
-      <p><a href="mailto:kyle@vulpine.me">Email me</a></p>
     </div>
   </body>
 </html>
