@@ -57,6 +57,11 @@ path:first-child {
 
 h1 {
     margin-top: 0;
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 300;
 }
 
 svg {
