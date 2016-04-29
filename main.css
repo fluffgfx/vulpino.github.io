@@ -1,6 +1,11 @@
 body {
     margin: 0; padding: 0;
     top: 0; left: 0; bottom: 0; right: 0;
+    overflow-x: hidden;
+}
+
+* {
+    transition: all 0.5s ease-in;
 }
 
 #content-wrapper {
@@ -94,4 +99,5 @@ path {
 
 @media screen and (max-aspect-ratio: 1/3) {
     #content img { width: 100%; height: auto; }
+    #content { width: 85%; }
 }
