@@ -1,0 +1,17 @@
+{
+  "name": "vulpino-freedom",
+  "version": "0.3.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "transpile": "\"node_modules\\.bin\\babel\" -o main.js main.es6.js"
+  },
+  "author": "vulpino",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0"
+  }
+}
